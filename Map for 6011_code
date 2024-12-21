@@ -1,0 +1,46 @@
+# Install Folium
+!pip install folium
+
+# Import folium
+import folium
+
+# Prepare the data (locations of the Cherry Blossoms)
+locations = [
+    {"name": "大埔海滨公园 Tai Po Waterfront Park", "latitude": 22.45273098, "longitude": 114.1846022},
+    {"name": "长洲关公亭 Cheung Chau Kwan Kung Pavilion", "latitude": 22.20634215, "longitude": 114.0319271},
+    {"name": "元朗公园 Yuen Long Park", "latitude": 22.4419974, "longitude": 114.0188272},
+    {"name": "嘉道理农场暨植物园 Kadoorie Farm and Botanic Garden", "latitude": 22.43356136, "longitude": 114.1174259},
+    {"name": "香港中文大学 The Chinese University of Hong Kong", "latitude": 22.41684759, "longitude": 114.2087237},
+    {"name": "大帽山郊野公园内的扶轮公园 Fur Lin Park in Tai Mo Shan Country Park", "latitude": 22.40429177, "longitude": 114.1059184},
+    {"name": "香港动植物公园 Hong Kong Zoological and Botanical Gardens", "latitude": 22.27760515, "longitude": 114.1561568},
+    {"name": "香港单车馆公园 Hong Kong Velodrome Park", "latitude": 22.31390767, "longitude": 114.2615092},
+    {"name": "狮子山公园 Lion Rock Park", "latitude": 22.35458818, "longitude": 114.1826076},
+    {"name": "昂坪市集 Ngong Ping Market", "latitude": 22.25631988, "longitude": 113.9029688},
+    {"name": "香港科学园 Hong Kong Science Park", "latitude": 22.4276069, "longitude": 114.2120609},
+    {"name": "鲗鱼涌公园 Quarry Bay Park", "latitude": 22.28860911, "longitude": 114.2155527},
+    {"name": "香港动植物公园 (Hong Kong Zoological and Botanical Gardens)", "latitude": 22.27765479, "longitude": 114.1562748},
+    {"name": "香港公园 (Hong Kong Park)", "latitude": 22.27719586, "longitude": 114.1607114},
+    {"name": "香港海洋公园 (Ocean Park Hong Kong)", "latitude": 22.24581204, "longitude": 114.1759375}
+]
+
+# Create a map centered around Hong Kong (latitude: 22.3193, longitude: 114.1694)
+hk_map = folium.Map(location=[22.3193, 114.1694], zoom_start=11)
+
+# Add markers with a larger font size in the popup box
+for location in locations:
+    folium.Marker(
+        location=[location['latitude'], location['longitude']],  # Latitude and Longitude
+        popup=folium.Popup(
+            f'<div style="font-size: 20px; color: black; font-weight: bold;">{location["name"]}</div>',
+            max_width=300  # Text inside a popup box with larger font size
+        ),
+    ).add_to(hk_map)  # Add the marker to the map
+
+    # Save the map as an HTML file
+hk_map.save('hong_kong_cherry_blossom_map.html')
+
+from google.colab import files
+files.download('hong_kong_cherry_blossom_map.html')
+
+# Display the map inline in Google Colab
+hk_map
