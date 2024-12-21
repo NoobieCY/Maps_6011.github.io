@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f141072681fa126dbf1da3e34185050 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f141072681fa126dbf1da3e34185050" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f141072681fa126dbf1da3e34185050 = L.map(
+                "map_3f141072681fa126dbf1da3e34185050",
+                {
+                    center: [22.3193, 114.1694],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_218555a14a2ce880cbd91a3aa0ee9481 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_218555a14a2ce880cbd91a3aa0ee9481.addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+            var marker_d92a52bf37061828dfcd886fc91b9e7f = L.marker(
+                [22.45273098, 114.1846022],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_0cac3a86ce3d1bd16671bba707fe0390 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bedb358ae5715c0ed4d2b1f87f2e7e24 = $(`<div id="html_bedb358ae5715c0ed4d2b1f87f2e7e24" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">大埔海滨公园 Tai Po Waterfront Park</div></div>`)[0];
+                popup_0cac3a86ce3d1bd16671bba707fe0390.setContent(html_bedb358ae5715c0ed4d2b1f87f2e7e24);
+            
+        
+
+        marker_d92a52bf37061828dfcd886fc91b9e7f.bindPopup(popup_0cac3a86ce3d1bd16671bba707fe0390)
+        ;
+
+        
+    
+    
+            var marker_aa50b0347e69bdcd6af723fcd61896fa = L.marker(
+                [22.20634215, 114.0319271],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_19cbbd22be66e14692db93ce7511ac05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7132c822c05bf171a46691a7793a6b42 = $(`<div id="html_7132c822c05bf171a46691a7793a6b42" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">长洲关公亭 Cheung Chau Kwan Kung Pavilion</div></div>`)[0];
+                popup_19cbbd22be66e14692db93ce7511ac05.setContent(html_7132c822c05bf171a46691a7793a6b42);
+            
+        
+
+        marker_aa50b0347e69bdcd6af723fcd61896fa.bindPopup(popup_19cbbd22be66e14692db93ce7511ac05)
+        ;
+
+        
+    
+    
+            var marker_9967dd90a59b85e7cf613cfcb2de3f29 = L.marker(
+                [22.4419974, 114.0188272],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_f7e5a942a00623d580ecf2610da7e7a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_099ff38054cf583ea1a6ee6422d09f34 = $(`<div id="html_099ff38054cf583ea1a6ee6422d09f34" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">元朗公园 Yuen Long Park</div></div>`)[0];
+                popup_f7e5a942a00623d580ecf2610da7e7a6.setContent(html_099ff38054cf583ea1a6ee6422d09f34);
+            
+        
+
+        marker_9967dd90a59b85e7cf613cfcb2de3f29.bindPopup(popup_f7e5a942a00623d580ecf2610da7e7a6)
+        ;
+
+        
+    
+    
+            var marker_fb9a7c149e948d9d2ca11d576140e90e = L.marker(
+                [22.43356136, 114.1174259],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_5ad7ed708201515c2852250a7f17b610 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6465c540e51e9b600bc3510c9904754 = $(`<div id="html_c6465c540e51e9b600bc3510c9904754" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">嘉道理农场暨植物园 Kadoorie Farm and Botanic Garden</div></div>`)[0];
+                popup_5ad7ed708201515c2852250a7f17b610.setContent(html_c6465c540e51e9b600bc3510c9904754);
+            
+        
+
+        marker_fb9a7c149e948d9d2ca11d576140e90e.bindPopup(popup_5ad7ed708201515c2852250a7f17b610)
+        ;
+
+        
+    
+    
+            var marker_4850a526acea295ea16f0d62b4f33d89 = L.marker(
+                [22.41684759, 114.2087237],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_89e54876b63906a9ac6dfcb619be607f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_836d7a072959f942fef978bb218a77ee = $(`<div id="html_836d7a072959f942fef978bb218a77ee" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港中文大学 The Chinese University of Hong Kong</div></div>`)[0];
+                popup_89e54876b63906a9ac6dfcb619be607f.setContent(html_836d7a072959f942fef978bb218a77ee);
+            
+        
+
+        marker_4850a526acea295ea16f0d62b4f33d89.bindPopup(popup_89e54876b63906a9ac6dfcb619be607f)
+        ;
+
+        
+    
+    
+            var marker_18e7846bc3c962f9d30332ff99059b22 = L.marker(
+                [22.40429177, 114.1059184],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_9a2d381a94bfd08bfbe8e6bfffae9527 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbc052870c04129fb7b6a69d12fe2869 = $(`<div id="html_bbc052870c04129fb7b6a69d12fe2869" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">大帽山郊野公园内的扶轮公园 Fur Lin Park in Tai Mo Shan Country Park</div></div>`)[0];
+                popup_9a2d381a94bfd08bfbe8e6bfffae9527.setContent(html_bbc052870c04129fb7b6a69d12fe2869);
+            
+        
+
+        marker_18e7846bc3c962f9d30332ff99059b22.bindPopup(popup_9a2d381a94bfd08bfbe8e6bfffae9527)
+        ;
+
+        
+    
+    
+            var marker_9c78e96a98895c3deaa813fedb8afb6e = L.marker(
+                [22.27760515, 114.1561568],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_acc898779a611b0acac8cbd2fab76c45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff91ffd42df977e47072f4124d4edf62 = $(`<div id="html_ff91ffd42df977e47072f4124d4edf62" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港动植物公园 Hong Kong Zoological and Botanical Gardens</div></div>`)[0];
+                popup_acc898779a611b0acac8cbd2fab76c45.setContent(html_ff91ffd42df977e47072f4124d4edf62);
+            
+        
+
+        marker_9c78e96a98895c3deaa813fedb8afb6e.bindPopup(popup_acc898779a611b0acac8cbd2fab76c45)
+        ;
+
+        
+    
+    
+            var marker_9a089ee07796a02b16bc932ee3f04554 = L.marker(
+                [22.31390767, 114.2615092],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_b9dd140d02594b38e25e4ee9e58a58f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35e0fdb18f853353996121f6b78bc8b9 = $(`<div id="html_35e0fdb18f853353996121f6b78bc8b9" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港单车馆公园 Hong Kong Velodrome Park</div></div>`)[0];
+                popup_b9dd140d02594b38e25e4ee9e58a58f5.setContent(html_35e0fdb18f853353996121f6b78bc8b9);
+            
+        
+
+        marker_9a089ee07796a02b16bc932ee3f04554.bindPopup(popup_b9dd140d02594b38e25e4ee9e58a58f5)
+        ;
+
+        
+    
+    
+            var marker_19401734d76a8e3ab4d53f32f55b3a25 = L.marker(
+                [22.35458818, 114.1826076],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_5a45730f68c69b61ec60d87312d07eb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bea5060467622c89743108c7b6fc85f = $(`<div id="html_7bea5060467622c89743108c7b6fc85f" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">狮子山公园 Lion Rock Park</div></div>`)[0];
+                popup_5a45730f68c69b61ec60d87312d07eb9.setContent(html_7bea5060467622c89743108c7b6fc85f);
+            
+        
+
+        marker_19401734d76a8e3ab4d53f32f55b3a25.bindPopup(popup_5a45730f68c69b61ec60d87312d07eb9)
+        ;
+
+        
+    
+    
+            var marker_cd291065d50aad6a263447b4d422d34b = L.marker(
+                [22.25631988, 113.9029688],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_45102774ac1800d9bb75978520303613 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e943a705ea2feba70fe19b2380c7ed90 = $(`<div id="html_e943a705ea2feba70fe19b2380c7ed90" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">昂坪市集 Ngong Ping Market</div></div>`)[0];
+                popup_45102774ac1800d9bb75978520303613.setContent(html_e943a705ea2feba70fe19b2380c7ed90);
+            
+        
+
+        marker_cd291065d50aad6a263447b4d422d34b.bindPopup(popup_45102774ac1800d9bb75978520303613)
+        ;
+
+        
+    
+    
+            var marker_3a9ff50af0c1abe7fb39dd0ae0c0e564 = L.marker(
+                [22.4276069, 114.2120609],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_53168bc1cc7701f3935ccab84c1085f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbad09023acba976af40ad6ccf01834e = $(`<div id="html_cbad09023acba976af40ad6ccf01834e" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港科学园 Hong Kong Science Park</div></div>`)[0];
+                popup_53168bc1cc7701f3935ccab84c1085f9.setContent(html_cbad09023acba976af40ad6ccf01834e);
+            
+        
+
+        marker_3a9ff50af0c1abe7fb39dd0ae0c0e564.bindPopup(popup_53168bc1cc7701f3935ccab84c1085f9)
+        ;
+
+        
+    
+    
+            var marker_299fa9980690537baf5601a1ee10199a = L.marker(
+                [22.28860911, 114.2155527],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_dbb3ea287931efde41cab4ee4eac3f5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f1f0a39de79c61101e6df216ddf42da = $(`<div id="html_0f1f0a39de79c61101e6df216ddf42da" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">鲗鱼涌公园 Quarry Bay Park</div></div>`)[0];
+                popup_dbb3ea287931efde41cab4ee4eac3f5a.setContent(html_0f1f0a39de79c61101e6df216ddf42da);
+            
+        
+
+        marker_299fa9980690537baf5601a1ee10199a.bindPopup(popup_dbb3ea287931efde41cab4ee4eac3f5a)
+        ;
+
+        
+    
+    
+            var marker_512a1a37bffa18e26952379240e98e37 = L.marker(
+                [22.27765479, 114.1562748],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_140700e40ac8a6d6e6c9f0579d856c1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06dfda6e07ffad3c53831d25967f9eab = $(`<div id="html_06dfda6e07ffad3c53831d25967f9eab" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港动植物公园 (Hong Kong Zoological and Botanical Gardens)</div></div>`)[0];
+                popup_140700e40ac8a6d6e6c9f0579d856c1d.setContent(html_06dfda6e07ffad3c53831d25967f9eab);
+            
+        
+
+        marker_512a1a37bffa18e26952379240e98e37.bindPopup(popup_140700e40ac8a6d6e6c9f0579d856c1d)
+        ;
+
+        
+    
+    
+            var marker_fd4895c31f48c97f5f76d05e7a8ef0d3 = L.marker(
+                [22.27719586, 114.1607114],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_e57e5fd09cc1b9a604631cda165ed3b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81a967efe46f7fbbbd98f4e59135af5b = $(`<div id="html_81a967efe46f7fbbbd98f4e59135af5b" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港公园 (Hong Kong Park)</div></div>`)[0];
+                popup_e57e5fd09cc1b9a604631cda165ed3b8.setContent(html_81a967efe46f7fbbbd98f4e59135af5b);
+            
+        
+
+        marker_fd4895c31f48c97f5f76d05e7a8ef0d3.bindPopup(popup_e57e5fd09cc1b9a604631cda165ed3b8)
+        ;
+
+        
+    
+    
+            var marker_0758bd147a08b4113970ef33b9a7904a = L.marker(
+                [22.24581204, 114.1759375],
+                {
+}
+            ).addTo(map_3f141072681fa126dbf1da3e34185050);
+        
+    
+        var popup_6ebef63d3dd3ab7df628876ace34818e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_476e0dd4a5e387d447d91115dfd5d6a7 = $(`<div id="html_476e0dd4a5e387d447d91115dfd5d6a7" style="width: 100.0%; height: 100.0%;"><div style="font-size: 20px; color: black; font-weight: bold;">香港海洋公园 (Ocean Park Hong Kong)</div></div>`)[0];
+                popup_6ebef63d3dd3ab7df628876ace34818e.setContent(html_476e0dd4a5e387d447d91115dfd5d6a7);
+            
+        
+
+        marker_0758bd147a08b4113970ef33b9a7904a.bindPopup(popup_6ebef63d3dd3ab7df628876ace34818e)
+        ;
+
+        
+    
+</script>
+</html>
